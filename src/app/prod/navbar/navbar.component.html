@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">login<span class="text-danger">APP</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      
+
+    </ul>
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link active" routerLinkActive="active" [routerLink]="['Guardarprod']">GuardarProd</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" routerLinkActive="active" [routerLink]="['Galeria']">galeria</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="#" >Salir</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">NombreUsuario</a>
+      </li>
+      <li class="nav-item">
+        <img src="../../../assets/png-transparent-logo-emblem-brand-schoology-others-emblem-trademark-logo-thumbnail.png" class="rounded-circle" alt="" width="50" height="50">
+        <span class="badge pill badge-secondary">EmailUsuario</span>
+      </li>
+    </ul>
+    <button class="btn btn-danger" (click)="aparecer()">Buscar</button>
+    <form class="d-flex" *ngIf="Band">
+      <input type="text" class="form-control" name="filterPost" placeholder="Search..." [(ngModel)]="filterpost">
+      <button (click)=filtrar()>Search</button>
+    </form>
+  </div>
+</nav>

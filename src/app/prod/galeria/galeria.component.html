@@ -1,0 +1,13 @@
+<p></p>
+<div class="card-group">
+<div class="card" *ngFor="let i of lista">
+    <img src="{{i.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-tittle">Nombre: {{i.nombre}}</h5>
+    <p class="card-text">Precio:{{i.precio}}</p>
+
+    <p class="card-text">Tecnologico</p>
+    <button (click)="detalle(i.id)">Mostrar</button>
+    
+</div>
+</div>
